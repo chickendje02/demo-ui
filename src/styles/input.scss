@@ -1,0 +1,27 @@
+@import "variables";
+
+.form-group {
+  margin-top: 10px;
+
+  .form-control {
+    color: inherit;
+    height: 34px;
+    border: $black-border;
+    border-radius: $default-border-radius;
+    font-size: inherit;
+    padding: 8px 10px;
+    line-height: normal;
+
+    &:focus, &.focus {
+      border: $blue-border;
+      outline: $blue-border;
+      box-shadow: unset;
+    }
+
+    &.has-error {
+      border: $red-border;
+      outline: $red-border;
+      box-shadow: unset;
+    }
+  }
+}

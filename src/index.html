@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="en_US" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="context-path" th:content="@{/}" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Demo UI</title>
+    <script type="text/javascript" th:src="@{/js/ckeditor/ckeditor.js}"></script>
+    
+    <% for (let css in htmlWebpackPlugin.files.css) { %>
+        <link th:href="@{<%= htmlWebpackPlugin.files.css[css] %>}" rel="stylesheet" />
+    <% } %>
+    
+</head>
+<body>
+<div id="root"></div>
+
+<% for (let js in htmlWebpackPlugin.files.js) { %>
+    <script type="text/javascript" th:src="@{<%= htmlWebpackPlugin.files.js[js].replace(/^\/translation\//,'\/') %>}"></script>
+<% } %>
+
+</body>
+</html>
+

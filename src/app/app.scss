@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/bootstrap';
+@import './src/styles/variables';
+@import './src/styles/modal';
+@import './src/styles/buttons';
+@import './src/styles/input';
+@import './src/styles/table';
+@import './src/styles/toast';
+@import './src/styles/common';
+
+html, body {
+  background-color: inherit;
+  font-family: SourceSansPro, sans-serif;
+  font-size: $default-font-size;
+  color: $default-black;
+  --ck-z-default: 100;
+  --ck-z-modal: calc( var(--ck-z-default) + 999 );
+}

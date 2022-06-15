@@ -1,0 +1,14 @@
+.custom-tooltip{
+  pointer-events: none;
+}
+
+.display-tooltip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.popover-body {
+  span {
+    white-space: pre-wrap !important;
+  }
+}

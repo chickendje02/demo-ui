@@ -1,0 +1,29 @@
+//Colours
+$default-black:           #333333 !default;
+$default-black-2:         #000000 !default;
+$default-white:           #FFFFFF !default;
+$placeholder-grey:        #AAAAAA !default;
+$dark-grey:               #DADADA !default;
+$mid-grey:                #EBEBEB !default;
+$mid-grey-2:              #ECECEC !default;
+$light-grey:              #F7F7F7 !default;
+$blue-hover:              #004898 !default;
+$default-blue:            #007AFF !default;
+$blue-disabled:           #8DBEF2 !default;
+$blue-disabled-2:         #7FBCFF !default;
+$outline-red:             #FF0000 !default;
+$feedback-red:            #FF9999 !default;
+$feedback-yellow:         #FFE980 !default;
+$light-green:             #0AC900 !default;
+$validation-error:        #FF1300 !default;
+
+//Default
+$default-font-size:       14px !default;
+$default-border-radius:   0 !default;
+
+$black-border:            1px solid $default-black !default;
+$blue-border:             1px solid $default-blue !default;
+$red-border:              1px solid $outline-red !default;
+$dark-grey-border:        1px solid $dark-grey !default;
+
+$default-shadow:          0 2px 4px 0 rgba($default-black, 0.5) !default;

@@ -1,0 +1,45 @@
+@import "./variables";
+
+.Toastify__toast-container {
+  color: $default-black !important;
+
+  .Toastify__toast--warning {
+    background: $feedback-yellow !important;
+
+    .Toastify__toast-body {
+      word-break: break-word;
+      white-space: pre-wrap!important;
+      margin: 0 !important;
+    }
+
+    .Toastify__close-button {
+      color: $default-black !important;
+    }
+  }
+  .Toastify__toast--success {
+    background: $feedback-yellow !important;
+
+    .Toastify__toast-body {
+      word-break: break-word;
+      white-space: pre-wrap!important;
+      margin: 0 !important;
+    }
+
+    .Toastify__close-button {
+      color: $default-black !important;
+    }
+  }
+  .Toastify__toast--error {
+    background: $feedback-red !important;
+
+    .Toastify__toast-body {
+      word-break: break-word;
+      white-space: pre-wrap!important;
+      margin: 0 !important;
+    }
+
+    .Toastify__close-button {
+      color: $default-black !important;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import "variables";
+
+.modal {
+  &.modal-static{
+    .modal-dialog{
+      transform: none!important;
+    }
+  }
+  .modal-dialog {
+    .modal-content {
+      font-size: inherit;
+      border: 0;
+      border-radius: $default-border-radius;
+      box-shadow: $default-shadow;
+
+      .modal-header {
+        border-radius: $default-border-radius;
+        background-color: $default-white;
+        border-bottom: 1px solid $dark-grey;
+        color: $default-black;
+        font-weight: 600;
+        padding: 15px 20px;
+        align-items: center !important;
+
+        .modal-title {
+          width: 100%;
+          font-size: inherit;
+          line-height: normal;
+          font-weight: 600;
+        }
+
+        .close {
+          color: $default-black !important;
+          padding: 3px 0 3px 10px;
+          margin: 0;
+        }
+      }
+
+      .modal-body {
+        background-color: $default-white;
+        padding: 20px;
+        word-break: break-word;
+      }
+
+      .modal-footer {
+        border-radius: $default-border-radius;
+        background-color: $default-white;
+        border-top: 1px solid $dark-grey;
+        font-weight: 600;
+        padding: 20px;
+
+        & > * {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .modal-sm {
+    max-width: 400px;
+  }
+
+  .modal-lg {
+    max-width: 900px;
+  }
+
+  .modal-xl {
+    // max-width: 1190px; don't remove comment or add max-with to this class due to it fixed size when view on small device, see ticket#PINB-35839
+  }
+}

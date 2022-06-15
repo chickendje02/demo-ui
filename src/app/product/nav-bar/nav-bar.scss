@@ -1,0 +1,29 @@
+@import '../../../styles/variables.scss';
+
+.menu-list {
+  a {
+    display: block;
+    padding: 8px 15px;
+    color: $default-black;
+  }
+
+  a:hover {
+    background-color: $dark-grey;
+    text-decoration: none;
+  }
+
+  .active-link,
+  .router-link-active {
+    color: $default-black;
+    background-color: $default-white;
+
+    &:hover {
+      background-color: $default-white;
+    }
+  }
+}
+
+
+
+
+

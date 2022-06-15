@@ -1,0 +1,194 @@
+@import "../../styles/variables";
+*{
+  margin:0;
+  padding:0 ;
+}
+
+.product {
+  font-family: SourceSansPro, sans-serif !important;
+  .btn-add-entry,.btn-multi-replace,.btn-multi-delete,.btn-search-filter{
+    background:$default-blue;
+    font-weight:600;
+    &:hover{
+      background:$blue-hover;
+    }
+  }
+  .filter {
+    display: flex;
+    padding: 20px;
+    background-color: $mid-grey;
+    
+    .search {
+      width: 280px;
+
+      button {
+        margin-top: 30px;
+      }
+    }
+
+    .language {
+      width: 280px;
+    }
+
+    .category {
+      width: 280px;
+    }
+
+    .w-col {
+      width: 280px;
+    }
+
+    .placeholder-section {
+      height: 34px;
+      width: 280px;
+      line-height: 34px;
+      border: solid 1px $default-black-2;
+      border-radius: unset;
+      outline: none;
+      padding-left: 10px;
+    }
+
+    .wrapper-dropdown {
+      width: 280px !important;
+    }
+  }
+
+  .cb-entry {
+    cursor: pointer;
+  }
+
+  .link-version {
+    cursor: pointer;
+    color: $default-black-2 !important;
+    font-weight: bold !important;
+  }
+
+  .lb-not-found {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .link-version-not-found {
+    cursor: pointer;
+    color: $default-blue !important;
+    font-weight: bold !important;
+    text-decoration: none;
+  }
+
+  .btn-back {
+    margin-top: 30px;
+  }
+
+  .onclick-menu {
+    &:before {
+      content: "•••";
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus-within .onclick-menu-content {
+      opacity: 1;
+      display: block;
+      border: unset !important;
+      list-style-type: none;
+      margin-left: -90px;
+      box-shadow: 0 2px 4px 0 #00000080;
+    }
+  }
+  .replace-preview{
+    .Changed{
+      background-color: #FFE980;
+    }
+  }
+  
+  .title-list {
+    margin-top: 30px;
+  }
+
+  .btn-search-entry{
+    &:hover{
+      background-color:#EBEBEB;
+    }
+  }
+
+  .search-text-field::placeholder{
+    color:$placeholder-grey;
+  }
+
+  .ReactTable.-highlight .rt-tbody .rt-tr:not(.-padRow):hover{
+    background-color:#EBEBEB;
+  }
+}
+
+.onclick-menu {
+  &.no-pointer-events {
+    pointer-events: auto !important;
+  }
+
+  &.no-visibility {
+    .onclick-menu-content {
+      visibility: visible !important;
+      display: none;
+    }
+
+    &:hover .onclick-menu-content {
+      display: block;
+    }
+  }
+
+  &.no-opacity .onclick-menu-content {
+    opacity: 1 !important;
+  }
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.onclick-menu-content {
+  background-color: $default-white;
+  width: auto;
+  margin-top: 0;
+  border-radius: $default-border-radius;
+  border: $default-black;
+  box-shadow: $default-shadow;
+  pointer-events: auto;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  display: none;
+  transition: visibility 0.5s;
+  padding-left: 0;
+
+  li {
+    color: #333;
+    font-size: 12px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  button {
+    width: 146px;
+    padding: 5px;
+    display: flex;
+    border-bottom: solid 1px $dark-grey !important;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+}
+
+.search-icon{
+  width: 18px;
+  height: 12px;
+  margin-left:5px
+}
+.sortable{
+  cursor: pointer;
+}
+.base-text {
+  white-space: pre;
+}

@@ -1,0 +1,131 @@
+@import "variables";
+
+.btn {
+  border-radius: $default-border-radius !important;
+  padding: 8px 20px;
+  line-height: normal;
+}
+
+.btn-transparent {
+  border: 0;
+  color: $default-black;
+  background-color: transparent;
+  padding: 6px 10px;
+
+  &:hover {
+    color: $default-black;
+    background-color: $mid-grey;
+    border-color: unset;
+  }
+
+  &:focus, &.focus {
+    color: $default-black;
+    background-color: $mid-grey;
+    border-color: unset;
+  }
+
+  //&.disabled, &:disabled {
+  //  color: #fff;
+  //  background-color: #28a745;
+  //  border-color: #28a745;
+  //}
+
+  &:not(:disabled):not(.disabled) {
+    &:active, &.active {
+      color: $default-black;
+      background-color: $mid-grey;
+      border-color: unset;
+    }
+  }
+
+  &.btn-primary {
+    color: $default-blue;
+
+    &:hover {
+      color: $default-blue;
+    }
+
+    &:focus, &.focus {
+      color: $default-blue;
+    }
+    
+    &.disabled, &:disabled {
+      background-color: transparent;
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    
+    &:not(:disabled):not(.disabled) {
+      &:active, &.active {
+        color: $default-blue;
+      }
+    }
+  }
+}
+
+.btn-outline-dark {
+  color: $default-black;
+  background-color: $default-white;
+  border-color: $default-black;
+
+  &:hover {
+    color: $default-black;
+    background-color: $default-white;
+    border-color: $default-black;
+  }
+
+  &:focus, &.focus {
+    color: $default-black;
+    background-color: $default-white;
+    border-color: $default-black;
+  }
+
+  //&.disabled, &:disabled {
+  //  color: #fff;
+  //  background-color: #28a745;
+  //  border-color: #28a745;
+  //}
+
+  &:not(:disabled):not(.disabled) {
+    &:active, &.active {
+      color: $default-black;
+      background-color: $default-white;
+      border-color: $default-black;
+    }
+  }
+}
+
+.btn-dark {
+  &.disabled, &:disabled {
+    color: $default-black;
+    background-color: transparent;
+    cursor: not-allowed;
+  }
+}
+
+.btn-primary{
+  &.disabled, &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.btn-link {
+  color: $default-blue;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: underline;
+  padding: 0 10px;
+
+  &.dark {
+    color: $default-black;
+  }
+
+  &:hover {
+    color: $default-blue;
+  }
+
+  &:focus {
+    box-shadow: unset;
+  }
+}
