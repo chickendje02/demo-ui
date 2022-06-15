@@ -17,10 +17,6 @@
 <body>
 <div id="root"></div>
 
-<% for (let js in htmlWebpackPlugin.files.js) { %>
-    <script type="text/javascript" th:src="@{<%= htmlWebpackPlugin.files.js[js].replace(/^\/translation\//,'\/') %>}"></script>
-<% } %>
-
 </body>
 </html>
 

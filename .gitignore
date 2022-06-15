@@ -13,3 +13,5 @@ build/assets/images/sort-amount-up-icon_1.svg
 build/bundle.js
 build/bundle.js.map
 build/index.html
+/node_modules/
+/package-lock.json
